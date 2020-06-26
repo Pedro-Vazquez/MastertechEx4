@@ -1,0 +1,13 @@
+server:
+  port: 9000
+zuul:
+  routes:
+    cliente:
+      path: /cliente/**
+      url: http://localhost:8081
+    produto:
+      path: /produto/**
+      url: http://localhost:8082
+    aplicacao:
+      path: /aplicacao/**
+      url: http://localhost:8083
